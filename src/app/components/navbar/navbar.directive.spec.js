@@ -14,18 +14,18 @@
 
     beforeEach(module('restPro'));
     beforeEach(inject(function($compile, $rootScope) {
-      // spyOn(_$window_, 'moment').and.callThrough();
-      // $window = _$window_;
+      //// spyOn(_$window_, 'moment').and.callThrough();
+      //// $window = _$window_;
 
-      timeInMs = new Date();
-      timeInMs = timeInMs.setHours(timeInMs.getHours() - 24);
+      //timeInMs = new Date();
+      //timeInMs = timeInMs.setHours(timeInMs.getHours() - 24);
 
-      el = angular.element('<acme-navbar creation-date="' + timeInMs + '"></acme-navbar>');
+        //el = angular.element('<restpro-navbar creation-date="' + timeInMs + '"></restpro-navbar>');
 
       $compile(el)($rootScope.$new());
       $rootScope.$digest();
       vm = el.isolateScope().vm;
-      // ctrl = el.controller('acmeNavbar');
+      // ctrl = el.controller('restproNavbar');
     }));
 
     it('should be compiled', function() {
