@@ -1,7 +1,8 @@
 {
   "name": "restPro",
-  "version": "0.0.0",
-  "dependencies": {},
+  "version": "0.0.1",
+  "dependencies": { },
+  "description": "RestPro. Módulo de visualización de carta híbrido.",  
   "scripts": {
     "test": "gulp test"
   },

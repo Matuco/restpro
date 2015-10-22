@@ -1,15 +1,21 @@
-# Mexicana App
+# RestPro. Módulo Visualización de Carta
 
-Angular App para ordenar pedidos mediantes SAMBA POS API (v5).
+Módulo para vislización de carta/menú de proyecto RestPro. 
 
+Backend proporcionado por RestPro API (ASP.NET MVC API)
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+## Construcción & Desarrollo
 
-## Build & development
+Scaffold mediante Yeoman utilizando generador `gulp-angular`
 
-Run `grunt` for building and `grunt serve` for preview.
+- Gulp
+- Bower
+- Angular
+
+Task de producción `serve:dist`.
+Task de desarrollo `serve`.
+Task de construcción `build`
 
 ## Testing
 
-Running `grunt test` will run the unit tests with karma.
+Tests realizados mediante KarmaJS.

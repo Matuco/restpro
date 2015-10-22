@@ -13,6 +13,7 @@
     vm.classAnimation = '';
     vm.creationDate = 1445463788991;
     vm.showToastr = showToastr;
+    vm.testTexto = "Hola estoy desde un controller!";
 
     activate();
 
