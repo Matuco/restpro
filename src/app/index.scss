@@ -30,6 +30,12 @@ $fa-font-path: "../../bower_components/font-awesome/fonts/";
   }
 }
 
+@font-face {
+    font-family: "Akura Popo";
+    src: url(fonts/Akura_Popo.eot); /* IE */
+    src: local("Akura Popo"), url(/assets/fonts/Akura_Popo.ttf) format("truetype"); /* resto de navegadores */
+}
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;

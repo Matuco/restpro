@@ -1,0 +1,138 @@
+.title-list {}
+
+.title-list img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25px;
+    height: 100px;
+    width: auto;
+}
+
+
+/* PRODUCTS */
+
+.container {
+    display: block;
+    margin-top: 50px;
+}
+
+.col-item {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 250px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.photo img {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1px;
+    border-radius: 10px 10px 0 0;
+}
+
+.separator {
+    border-top: 1px solid #E1E1E1;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.separator p {
+    line-height: 20px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.separator p i {
+    margin-right: 5px;
+}
+
+.btn-add {
+    width: 50%;
+    float: left;
+}
+
+.btn-add {
+    border-right: 1px solid #E1E1E1;
+}
+
+.btn-add a {
+    font-family: "Akura Popo";
+    color:#1FA29B;
+    font-size: 1.3em;
+}
+
+.btn-details {
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+
+.btn-details a {
+    font-family: "Akura Popo";
+    color:#006459;
+    font-size: 1.3em;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+[data-slide="prev"] {
+    margin-right: 10px;
+}
+
+
+/*
+Hover the image
+*/
+
+.product-img-content {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    height: 200px;
+    width: 250px;
+}
+
+.product-img-content img {
+    position: absolute;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 7px;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-title {
+    text-align: center;
+    font-family: "Akura Popo";
+    font-size: 1.5em;
+    padding-top: 5px;
+}
+
+.product-price {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    right: 2px;
+    text-align: center;
+    font-family: "Akura Popo";
+    font-size: 1.5em;
+    color: #76121c;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}

@@ -3,10 +3,10 @@
 
   angular
     .module('restPro')
-    .controller('ListProductsController', MainController);
+    .controller('DetailProductsController', MainController);
 
   /** @ngInject */
-  function ListProductsController($timeout, webDevTec, toastr) {
+  function detailProductsController($timeout, webDevTec, toastr) {
     var vm = this;
 
     vm.awesomeThings = [];
