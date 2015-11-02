@@ -1,1 +1,24 @@
-﻿/* NADA... AUN */
+.cart-summary {
+    display: inline-block;
+    position: fixed;
+    float: right;
+    right: 150px;
+    top: 20px;
+    z-index: 999;
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    background: none;
+    border: none;
+}
+
+.btn-summary {
+    color: #fff;
+    background-color: #76121c;
+    border-radius: 5px;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}

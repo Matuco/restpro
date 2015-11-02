@@ -18,4 +18,15 @@
     toastrConfig.progressBar = true;
   }
 
+    var a = $(".nav-bg").offset().top;
+
+$(document).scroll(function(){
+    if($(this).scrollTop() > a)
+    {   
+       $('.nav-bg').css({"background":"rgba(255,255,255,0.85)"});
+    } else {
+       $('.nav-bg').css({"background":"transparent"});
+    }
+});
+    
 })();
