@@ -2,7 +2,7 @@
    <div class="cart-summary pull-right">
     <div class="row">
         <div class="col-xs-12">
-           <a ng-href="#/detail" class="btn btn-summary">
+           <a ng-href="#/cart" class="btn btn-summary">
             <i class="fa fa-shopping-cart"></i>
         {{ ngCart.getTotalItems() }}
             <ng-pluralize count="ngCart.getTotalItems()" when="{1: 'item', 'other':'items'}"></ng-pluralize>

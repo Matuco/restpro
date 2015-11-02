@@ -22,6 +22,11 @@
                 controller: 'DetailProductsController',
                 controllerAs: 'detail'
             })
+        .when('/cart', {
+                templateUrl: 'app/cart/cart.html',
+                controller: 'CartController',
+                controllerAs: 'cart'
+            })
             .otherwise({
                 redirectTo: '/'
             });
