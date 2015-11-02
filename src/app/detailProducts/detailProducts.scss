@@ -1,7 +1,11 @@
+.detail-img {
+    border-radius: 10px;
+}
+
 .detail-title {
-    text-align: center;
+    text-align: left;
     font-family: "Akura Popo";
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding-top: 5px;
 }
 
@@ -9,21 +13,29 @@
     display: table-cell;
     vertical-align: middle;
     position: relative;
-    z-index: 2;
-    right: 2px;
-    text-align: center;
+    text-align: left;
     font-family: "Akura Popo";
-    font-size: 1.5em;
+    font-size: 2em;
     color: #76121c;
     letter-spacing: 1px;
     padding-top: 5px;
     padding-right: 10px;
-    padding-left: 10px;
-    background-color: #fff;
+    padding-left: 15px;
+}
+
+.detail-text {}
+
+.btn-back {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    bottom: 0px;
+    left: 15px;
+    margin-top: 15px;
+    background-color: #76121c;
+    background-image: url(/assets/images/volver.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     border-radius: 5px;
 }
-
-.detail-text {
-    
-}
-
