@@ -60,6 +60,11 @@ body {
     z-index: 2;
 }
 
+.hide-text {
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
