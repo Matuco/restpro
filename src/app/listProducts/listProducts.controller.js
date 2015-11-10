@@ -1,40 +1,22 @@
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('restPro')
-    .controller('ListProductsController', MainController);
+    angular.module('restPro')
+      .controller('ListProductsController', ListProductsController);
 
-  /** @ngInject */
-  function ListProductsController($timeout, webDevTec, toastr) {
-    var vm = this;
+    /** @ngInject */
+    function ListProductsController($routeParams, dataFactoryPlatos) {
+        var vm = this;        
+        vm.categoria = $routeParams.categoria; //Categoría 
+        vm.platos = [];
 
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
-    vm.creationDate = 1445463788991;
-    vm.showToastr = showToastr;
-    vm.testTexto = "Hola estoy desde un controller!";
-
-    activate();
-
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
+        dataFactoryPlatos.getPlatosCategoria(vm.categoria)
+        .then(function (response) {
+            vm.platos = response.data;
+            console.log("Entro a Factory Service. Categoria : " + vm.categoria + '(' + response.data.length + ')');
+            console.log();
+        }, function (error) {
+            vm.platos = error || "Llamada a la API para Platos por categoria fallo!";
+        });
     }
-
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
-
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
-      });
-    }
-  }
 })();

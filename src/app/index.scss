@@ -31,9 +31,11 @@ $fa-font-path: "../../bower_components/font-awesome/fonts/";
 
 @font-face {
     font-family: "Akura Popo";
-    src: url(fonts/Akura_Popo.eot);
+    src: url(../assets/fonts/akura_popo/Akura_Popo.eot);
+    //src: url(fonts/Akura_Popo.eot);
     /* IE */
-    src: local("Akura Popo"), url(/assets/fonts/Akura_Popo.ttf) format("truetype");
+    src: local("Akura Popo"), url(../assets/fonts/akura_popo/Akura_Popo.ttf) format("truetype");
+    //src: local("Akura Popo"), url(/assets/fonts/Akura_Popo.ttf) format("truetype");
     /* resto de navegadores */
 }
 

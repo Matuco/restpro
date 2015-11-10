@@ -3,38 +3,24 @@
 
   angular
     .module('restPro')
-    .controller('DetailProductsController', MainController);
+    .controller('DetailProductsController', DetailProductsController);
 
   /** @ngInject */
-  function detailProductsController($timeout, webDevTec, toastr) {
+  function DetailProductsController($routeParams, dataFactoryPlatos) {
     var vm = this;
 
-    vm.awesomeThings = [];
-    vm.classAnimation = '';
-    vm.creationDate = 1445463788991;
-    vm.showToastr = showToastr;
-    vm.testTexto = "Hola estoy desde un controller!";
+    vm.platoid = $routeParams.id;
 
-    activate();
+    vm.plato = {}
+    vm.categoria;
+    vm.subCategoria;
 
-    function activate() {
-      getWebDevTec();
-      $timeout(function() {
-        vm.classAnimation = 'rubberBand';
-      }, 4000);
-    }
-
-    function showToastr() {
-      toastr.info('Fork <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank"><b>generator-gulp-angular</b></a>');
-      vm.classAnimation = '';
-    }
-
-    function getWebDevTec() {
-      vm.awesomeThings = webDevTec.getTec();
-
-      angular.forEach(vm.awesomeThings, function(awesomeThing) {
-        awesomeThing.rank = Math.random();
+    dataFactoryPlatos.getPlato(vm.platoid)
+      .then(function (response) {
+          vm.plato = response.data;
+          console.log("Entro a Factory Service. Plato : " + vm.platoid);          
+      }, function (error) {
+          vm.plato = error || "Llamada a la API para Platos por categoria fallo!";
       });
-    }
   }
 })();

@@ -1,191 +1,44 @@
-<!-- Title -->
-
-<div class="row">
-    <div class="col-xs-12">
-        <div class="title-list">
-            <img src="/assets/images/title-botanas.svg" alt="Botanas" class="img-responsive">
+<div ng-controller="ListProductsController as list">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="title-list">
+                <img src="/assets/images/title-{{list.categoria}}.svg" alt="Botanas" class="img-responsive">
+            </div>
         </div>
     </div>
-</div>
 
-<!-- Products -->
-
-<div class="container">
-    <div class="row">
-<!-- Product 1 -->
-        <div class="col-xs-6 col-sm-4">
-            <div class="col-item">
-                <div class="product-img-content">
-                    <img src="/assets/images/plato.jpg" class="img-responsive" />
-                    <span class="product-price pull-right">
-                        <b>$00.000</b>
-                    </span>
-
-                </div>
-
-                <div class="row">
-                    <div class="product-title col-xs-12">
-                        <p> Guacamole Tricolor</p>
-
+    <!-- Platos -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-12" ng-repeat="plato in list.platos">
+                <!-- Bloque Repetitivo-->
+                <div class="col-item">
+                    <div class="product-img-content">
+                        <img src="/assets/images/plato.jpg" class="img-responsive" />
+                        <span class="product-price pull-right">
+                            <b>${{plato.PrecioPlato}}</b>
+                        </span>
                     </div>
-                </div>
-                
-                <div class="separator clear-left">
-                    <p class="btn-add">
-                        <a href="#"><i class="fa fa-shopping-cart"></i>AGREGAR</a></p>
-                    <p class="btn-details">
-                        <a href="#/detail"><i class="fa fa-list"></i>DETALLES </a></p>
-                </div>
-                <div class="clearfix">
-                </div>
 
-            </div>
-        </div>
-<!-- Product 2 -->
-   <div class="col-xs-6 col-sm-4">
-            <div class="col-item">
-                <div class="product-img-content">
-                    <img src="/assets/images/plato.jpg" class="img-responsive" />
-                    <span class="product-price pull-right">
-                        <b>$00.000</b>
-                    </span>
+                    <div class="row">
+                        <div class="product-title col-xs-12">
+                            <p>{{plato.NombrePlato}}</p>
+                        </div>
+                    </div>
 
-                </div>
-
-                <div class="row">
-                    <div class="product-title col-xs-12">
-                        <p> Guacamole Tricolor</p>
-
+                    <div class="separator clear-left">
+                        <ngcart-addtocart id="{{ plato.PlatoID }}" name="{{ plato.NombrePlato }}" price="{{ plato.PrecioPlato }}" quantity="1" quantity-max="10" data="plato"></ngcart-addtocart>
+                        <!--<p class="btn btn-details">
+                            <a href="#/detail">
+                        </p>-->
+                        <a class="btn btn-details" href="#/detail/{{ plato.PlatoID }}"><i class="fa fa-list"></i>DETALLES</a>
+                    </div>
+                    <div class="clearfix">
                     </div>
 
                 </div>
-                <div class="separator clear-left">
-                    <p class="btn-add">
-                        <a href="#"><i class="fa fa-shopping-cart"></i>AGREGAR</a></p>
-                    <p class="btn-details">
-                        <a href="#"><i class="fa fa-list"></i>DETALLES </a></p>
-                </div>
-                <div class="clearfix">
-                </div>
-
             </div>
+
         </div>
-  <!--  Product 3 -->
-   <div class="col-xs-6 col-sm-4">
-            <div class="col-item">
-                <div class="product-img-content">
-                    <img src="/assets/images/plato.jpg" class="img-responsive" />
-                    <span class="product-price pull-right">
-                        <b>$00.000</b>
-                    </span>
-
-                </div>
-
-                <div class="row">
-                    <div class="product-title col-xs-12">
-                        <p> Guacamole Tricolor</p>
-
-                    </div>
-
-                </div>
-                <div class="separator clear-left">
-                    <p class="btn-add">
-                        <a href="#"><i class="fa fa-shopping-cart"></i>AGREGAR</a></p>
-                    <p class="btn-details">
-                        <a href="#"><i class="fa fa-list"></i>DETALLES </a></p>
-                </div>
-                <div class="clearfix">
-                </div>
-
-            </div>
-        </div>
-   <!-- Product 4 -->
-   <div class="col-xs-6 col-sm-4">
-            <div class="col-item">
-                <div class="product-img-content">
-                    <img src="/assets/images/plato.jpg" class="img-responsive" />
-                    <span class="product-price pull-right">
-                        <b>$00.000</b>
-                    </span>
-
-                </div>
-
-                <div class="row">
-                    <div class="product-title col-xs-12">
-                        <p> Guacamole Tricolor</p>
-
-                    </div>
-
-                </div>
-                <div class="separator clear-left">
-                    <p class="btn-add">
-                        <a href="#"><i class="fa fa-shopping-cart"></i>AGREGAR</a></p>
-                    <p class="btn-details">
-                        <a href="#"><i class="fa fa-list"></i>DETALLES </a></p>
-                </div>
-                <div class="clearfix">
-                </div>
-
-            </div>
-        </div>
-        <!-- Product 5 -->
-        <div class="col-xs-6 col-sm-4">
-            <div class="col-item">
-                <div class="product-img-content">
-                    <img src="/assets/images/plato.jpg" class="img-responsive" />
-                    <span class="product-price pull-right">
-                        <b>$00.000</b>
-                    </span>
-
-                </div>
-
-                <div class="row">
-                    <div class="product-title col-xs-12">
-                        <p> Guacamole Tricolor</p>
-
-                    </div>
-
-                </div>
-                <div class="separator clear-left">
-                    <p class="btn-add">
-                        <a href="#"><i class="fa fa-shopping-cart"></i>AGREGAR</a></p>
-                    <p class="btn-details">
-                        <a href="#"><i class="fa fa-list"></i>DETALLES </a></p>
-                </div>
-                <div class="clearfix">
-                </div>
-
-            </div>
-        </div>
-        <!-- Product 6 -->
-        <div class="col-xs-6 col-sm-4">
-            <div class="col-item">
-                <div class="product-img-content">
-                    <img src="/assets/images/plato.jpg" class="img-responsive" />
-                    <span class="product-price pull-right">
-                        <b>$00.000</b>
-                    </span>
-
-                </div>
-
-                <div class="row">
-                    <div class="product-title col-xs-12">
-                        <p> Guacamole Tricolor</p>
-
-                    </div>
-
-                </div>
-                <div class="separator clear-left">
-                    <p class="btn-add">
-                        <a href="#"><i class="fa fa-shopping-cart"></i>AGREGAR</a></p>
-                    <p class="btn-details">
-                        <a href="#"><i class="fa fa-list"></i>DETALLES </a></p>
-                </div>
-                <div class="clearfix">
-                </div>
-
-            </div>
-        </div>
-   
     </div>
 </div>

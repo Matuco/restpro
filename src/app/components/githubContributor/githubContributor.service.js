@@ -27,7 +27,7 @@
 
       function getContributorsComplete(response) {
         return response.data;
-      }
+      }        
 
       function getContributorsFailed(error) {
         $log.error('XHR Failed for getContributors.\n' + angular.toJson(error.data, true));

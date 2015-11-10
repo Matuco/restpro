@@ -12,17 +12,12 @@
                 controller: 'MainController',
                 controllerAs: 'main'
             })
-            .when('/list', {
+            .when('/list/:categoria', {
                 templateUrl: 'app/listProducts/listProducts.html',
                 controller: 'ListProductsController',
                 controllerAs: 'list'
             })
-            .when('/listSelection', {
-                templateUrl: 'app/listProducts-Selection/listProducts-Selection.html',
-                controller: 'ListProductsSelectionController',
-                controllerAs: 'listSelection'
-            })
-            .when('/detail', {
+            .when('/detail/:id', {
                 templateUrl: 'app/detailProducts/detailProducts.html',
                 controller: 'DetailProductsController',
                 controllerAs: 'detail'

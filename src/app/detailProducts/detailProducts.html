@@ -7,16 +7,16 @@
         <!-- Info -->
         <div class="col-xs-6">
             <div class="detail-title col-xs-12">
-                <p> Guacamole Tricolor</p>
+                <p>{{detail.plato.NombrePlato}}</p>
             </div>
             <div class="detail-price col-xs-12">
-                <p> $00.000</p>
+                <p>${{detail.plato.PrecioPlato}}</p>
             </div>
             <div class="detail-text col-xs-12">
-                <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con vino pichanga coscacho ni ahí peinar la muñeca chuchada al chancho achoclonar. Chorrocientos pituto ubicatex huevo duro bolsero cachureo el hoyo del queque en cana huevón el año del loly hacerla corta impeque de miedo quilterry la raja longi ñecla. Hilo curado rayuela carrete quina guagua lorea piola ni ahí.m</p>
+                <p>{{detail.plato.DescripcionCarta}}</p>
             </div>
-        <!--  Button -->
-        <a ng-click="back()" class="btn btn-back" href="#" onclick="history.go(-1)"></a>
+            <!--  Button -->
+            <a ng-click="back()" class="btn btn-back" href="#" onclick="history.go(-1)"></a>
         </div>
     </div>
 </div>
