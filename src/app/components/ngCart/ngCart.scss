@@ -22,3 +22,12 @@
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
 }
+
+.styled-select {
+   width: 50px;
+   height: 40px;
+   overflow: hidden;
+   background: url(new_arrow.png) no-repeat right #ddd;
+   border: 1px solid #ccc;
+   }
+

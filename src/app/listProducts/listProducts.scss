@@ -116,7 +116,7 @@ Hover the image
     text-align: center;
     font-family: "Akura Popo";
     font-size: 1.5em;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .product-price {
@@ -135,4 +135,9 @@ Hover the image
     padding-left: 10px;
     background-color: #fff;
     border-radius: 5px;
+}
+
+.buttons-menu {
+    display: inline-flex;
+        margin-left: 5px;
 }

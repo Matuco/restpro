@@ -61,10 +61,80 @@ body {
 }
 
 .hide-text {
-text-indent: 100%;
-white-space: nowrap;
-overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
+
+/* Buttons */
+
+.btn-agregar {
+    position: relative;
+    height: 40px;
+    width: 90px;
+    bottom: 0px;
+    left: 0px;
+    top: -8px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 5px solid #76121c;
+    background-color: #76121c;
+    background-image: url(/assets/images/btn-agregar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn-detalle {
+    position: relative;
+    height: 40px;
+    width: 90px;
+    top: -8px;
+    bottom: 0px;
+    left: 3px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 5px solid #76121c;
+    background-color: #76121c;
+    background-image: url(/assets/images/btn-detalle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn-volver {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    bottom: 0px;
+    left: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #76121c;
+    background-image: url(/assets/images/btn-volver.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 5px solid #76121c;
+}
+
+.btn-confirmar {
+     position: relative;
+    height: 40px;
+    width: 140px;
+    bottom: 0px;
+    left: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #76121c;
+    background-image: url(/assets/images/btn-confirmar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 5px solid #76121c;
+}
+
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

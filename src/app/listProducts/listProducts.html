@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="title-list">
-                <img src="/assets/images/title-{{list.categoria}}.svg" alt="Botanas" class="img-responsive">
+                <img src="/assets/images/title-{{list.categoriacorto}}.svg" alt="Botanas" class="img-responsive">
             </div>
         </div>
     </div>
@@ -10,6 +10,7 @@
     <!-- Platos -->
     <div class="container">
         <div class="row">
+            <h2>{{list.categoriacorto}}</h2>
             <div class="col-md-4 col-xs-12 col-sm-12" ng-repeat="plato in list.platos">
                 <!-- Bloque Repetitivo-->
                 <div class="col-item">
@@ -26,12 +27,15 @@
                         </div>
                     </div>
 
-                    <div class="separator clear-left">
-                        <ngcart-addtocart id="{{ plato.PlatoID }}" name="{{ plato.NombrePlato }}" price="{{ plato.PrecioPlato }}" quantity="1" quantity-max="10" data="plato"></ngcart-addtocart>
-                        <!--<p class="btn btn-details">
-                            <a href="#/detail">
-                        </p>-->
-                        <a class="btn btn-details" href="#/detail/{{ plato.PlatoID }}"><i class="fa fa-list"></i>DETALLES</a>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="buttons-menu">
+                                <ngcart-addtocart id="{{ plato.PlatoID }}" name="{{ plato.NombrePlato }}" price="{{ plato.PrecioPlato }}" quantity="1" quantity-max="10" data="plato"></ngcart-addtocart>
+
+
+                                <a class="hide-text btn btn-detalle" href="#/detail/{{ plato.PlatoID }}"><i class="fa fa-list"></i>Detalle</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="clearfix">
                     </div>
