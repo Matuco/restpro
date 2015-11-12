@@ -102,7 +102,7 @@ html {
     -webkit-transition: width .2s ease-in;
     transition: width .2s ease-in;
 }
-
+/* logo Mexicana */
 .sidebar-nav li:first-child a {
     color: #fff;
     width: 350px;
@@ -115,77 +115,77 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+/* botanas */
 .sidebar-nav li:nth-child(2){
     background-image: url(/assets/images/sidebar-botanas.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+/* sopas */
 .sidebar-nav li:nth-child(3){
     background-image: url(/assets/images/sidebar-sopas.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+/* taqueria */
 .sidebar-nav li:nth-child(4){
     background-image: url(/assets/images/sidebar-taqueria.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+/* antojitos */
 .sidebar-nav li:nth-child(5){
-    background-image: url(/assets/images/sidebar-burritos.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.sidebar-nav li:nth-child(6){
     background-image: url(/assets/images/sidebar-antojitos.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.sidebar-nav li:nth-child(7){
-    background-image: url(/assets/images/sidebar-botanas.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.sidebar-nav li:nth-child(8){
+/* enchiladas */
+.sidebar-nav li:nth-child(6){
     background-image: url(/assets/images/sidebar-enchiladas.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.sidebar-nav li:nth-child(9){
+/* burritos */
+.sidebar-nav li:nth-child(7){
+    background-image: url(/assets/images/sidebar-burritos.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* quesadillas */
+.sidebar-nav li:nth-child(8){
     background-image: url(/assets/images/sidebar-quesadillas.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.sidebar-nav li:nth-child(10){
+/* tablas & picoteos */
+.sidebar-nav li:nth-child(9){
     background-image: url(/assets/images/sidebar-tablas.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.sidebar-nav li:nth-child(11){
+/* salsas */
+.sidebar-nav li:nth-child(10){
     background-image: url(/assets/images/sidebar-salsas.svg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+/* postres */
+.sidebar-nav li:nth-child(11){
+    background-image: url(/assets/images/sidebar-postres.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* de la cantina */
 .sidebar-nav li:nth-child(12){
     background-image: url(/assets/images/sidebar-cantina.svg);
     background-position: center;
