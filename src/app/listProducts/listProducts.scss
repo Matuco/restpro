@@ -27,69 +27,8 @@
     width: 250px;
     height: auto;
     margin-bottom: 25px;
+    background-color: #fff;
 }
-
-.photo img {
-    margin: 0 auto;
-    width: 100%;
-    padding: 1px;
-    border-radius: 10px 10px 0 0;
-}
-
-.separator {
-    border-top: 1px solid #E1E1E1;
-}
-
-.clear-left {
-    clear: left;
-}
-
-.separator p {
-    line-height: 20px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.separator p i {
-    margin-right: 5px;
-}
-
-.btn-add {
-    width: 50%;
-    float: left;
-}
-
-.btn-add {
-    border-right: 1px solid #E1E1E1;
-}
-
-.btn-add a {
-    font-family: "Akura Popo";
-    color:#E8778C;
-    font-size: 1.3em;
-}
-
-.btn-details {
-    width: 50%;
-    float: left;
-    padding-left: 10px;
-}
-
-.btn-details a {
-    font-family: "Akura Popo";
-    color:#76121c;
-    font-size: 1.3em;
-}
-
-.controls {
-    margin-top: 20px;
-}
-
-[data-slide="prev"] {
-    margin-right: 10px;
-}
-
 
 /*
 Hover the image
@@ -115,7 +54,7 @@ Hover the image
 .product-title {
     text-align: center;
     font-family: "Akura Popo";
-    font-size: 1.5em;
+    font-size: 2em;
     padding-top: 15px;
 }
 
@@ -126,7 +65,6 @@ Hover the image
     z-index: 1;
     right: 2px;
     text-align: center;
-    font-family: "Akura Popo";
     font-size: 1.5em;
     color: #76121c;
     letter-spacing: 1px;

@@ -27,6 +27,11 @@
                 controller: 'CartController',
                 controllerAs: 'cart'
             })
+            .when('/armaPlato', {
+                templateUrl: 'app/armaPlato/armaPlato.html',
+                controller: 'ArmaPlatoController',
+                controllerAs: 'armaPlato'
+            })
             .otherwise({
                 redirectTo: '/'
             });
