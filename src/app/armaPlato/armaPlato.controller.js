@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('restPro')
-      .controller('ArmaPlatoController', ListProductsController);
+      .controller('ArmaPlatoController');
 
     /** @ngInject */
     function ArmaPlatoController($routeParams, dataFactoryPlatos) {

@@ -32,6 +32,11 @@
                 controller: 'ArmaPlatoController',
                 controllerAs: 'armaPlato'
             })
+            .when('/menuAlmuerzo', {
+                templateUrl: 'app/menuAlmuerzo/menuAlmuerzo.html',
+                controller: 'MenuAlmuerzoController',
+                controllerAs: 'menuAlmuerzo'
+            })
             .otherwise({
                 redirectTo: '/'
             });
