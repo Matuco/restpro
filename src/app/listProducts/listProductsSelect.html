@@ -16,7 +16,7 @@
                 <div class="col-item">
                     <div class="product-img-content">
                         <a href="#/detail/{{ plato.PlatoID }}"><img src="/assets/images/plato.jpg" class="img-responsive" />
-                            <span class="product-price pull-right">
+                        <span class="product-price pull-right">
                             <b>${{plato.PrecioPlato}}</b>
                         </span>
                         </a>
@@ -27,13 +27,12 @@
                             <p>{{plato.NombrePlato}}</p>
                         </div>
                     </div>
-                    <!-- Acompañamiento Select -->
-                    <div class="row">
+<!-- new -->
+                   <div class="row">
                         <div class="col-xs-12">
-                        <div class="addSelect">
 <label for="singleSelect"> Acompañamiento: </label>
                                             <br>
-                                            <select name="singleSelect" ng-model="data.singleSelect" class="styled-select-xl">
+                                            <select name="singleSelect" ng-model="data.singleSelect" class="styled-select-lg">
                                                 <option disabled selected>Elija una opción</option>
                                                 <option value="">4 Tacos de Maíz con Carne</option>
                                                 <option value="">6 Triángulos de Quesadilla de Pollo</option>
@@ -43,11 +42,7 @@
                                                 <option>Sopa o Crema del Día</option>
                                             </select>
                     </div>
-                </div>
-            </div>
                    
-                    <!-- Buttons -->
-                    
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="buttons-menu">
